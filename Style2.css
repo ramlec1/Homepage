@@ -97,11 +97,6 @@ body{
     
 }
 
-#Footer{
-    text-align: right;
-    padding: 0.2%;
-}
-
 #Description{
     background-color: white;
     padding: 10%;
@@ -134,7 +129,11 @@ body{
     padding: 3%;
 }
 
-
+#Footer{
+    text-align: right;
+    padding: 0.2%;
+    color:grey;
+}
 
 /*
 .fling-minislide {width:"100%"; height: auto; overflow:hidden; position:relative; }
