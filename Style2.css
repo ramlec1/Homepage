@@ -5,13 +5,31 @@
 Table{
     font-family: arial;
     width: 100%;
+    color: black;
 
 }
 
-tr, th{
+tr, th, td{
     border:1px solid grey;
     text-align: left;
     padding:8px;
+}
+
+th,td{
+    width: 20%;
+}
+
+tr{
+    height: 60%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat", sans-serif;
+}
+
+p ,li{ 
+    line-height: 1.6;
+    font-size: 120%;
 }
 
 .Navigationbar{
@@ -64,19 +82,9 @@ body{
     margin: 0px;
 } 
 
-h1, h2, h3, h4, h5, h6{
-    font-family: "Montserrat", sans-serif;
-}
-
-p{
-    color: grey;
-    line-height: 1.6;
-    font-size: 120%;
-}
-
 #Main{
     position: relative;
-    padding: 10px 7vw 20px 7vw;
+    /*padding: 10px 7vw 20px 7vw;*/
     margin: 0;
     width: 100%;
     background-color: black;
@@ -86,31 +94,179 @@ p{
 
 #Container{
     background-color: black;
+    
 }
 
 #Footer{
+    text-align: right;
+    padding: 0.2%;
+}
+
+#Description{
+    background-color: white;
+    padding: 10%;
+    color:black;
+}
+
+#Contribution{
+    background: #323232;
+    padding: 10%;
+    color:white;
+}
+
+#Quotes{
+    background: #fff;
+    padding: 10%;
+    color:black;s
+}
+
+#Video{
+    background: #323232;
+    padding: 10%;
     text-align: center;
+    color:white;
 }
 
-
-#Picturebar::after{
-    clear: both;
-    display: table;
-}
-
-.Piccolumn{
-    float: left;
-    width: 25%;
-    height: 20vw;
-    padding-bottom: 0;
-    border-bottom: 0.5vw solid;
-    border-bottom-color: rgb(10, 10, 20);
-}
-
-.Headpic{
-    width:100%;
-    height:100%;
+#Reference{
+    background-color: #fff;
+    text-align: center;
+    color: black;
+    padding: 3%;
 }
 
 
 
+/*
+.fling-minislide {width:"100%"; height: auto; overflow:hidden; position:relative; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}} 
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
+*/
+
+/*
+.carousel{
+    position: relative;
+    width:"100%";
+    height:"100%";
+    overflow:hidden;
+}
+&:hover
+    .slide:after,
+    .counter,
+    .slide:before
+      opacity: 1
+.slide 
+  float: right
+  position: absolute
+  z-index: 1
+  width: 600px
+  height: 400px
+  background-color: #eee
+  text-align: center
+  transition: opacity 0.4s
+  opacity: 1
+  &:before
+    content: attr(annot)
+    display: block
+    position: absolute
+    left: 20px
+    bottom: 20px
+    color: rgba(255,255,255,0.9)
+    font-size: 14px
+    font-weight: 300
+    z-index: 12
+    opacity: 0
+    transition: opacity 0.3s
+    text-shadow: 0 0 1px black
+  
+  &:after
+    content: attr(slide)
+    display: block
+    position: absolute
+    bottom: 0
+    transition: opacity 0.3s
+    width: 100%
+    height: 80px
+    opacity: 0
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5))
+    text-align: left
+    text-indent: 549px
+    line-height: 101px
+    font-size: 13px
+    color: rgba(255,255,255,0.9)
+    text-shadow: 0 0 1px black
+.counter
+  position: absolute
+  bottom: 20px
+  right: 1px
+  height: 20px
+  width: 60px
+  z-index: 2
+  text-align: center
+  color: #fff
+  line-height: 21px
+  font-size: 13px
+  opacity: 0
+  transition: opacity 0.3s
+.faux 
+  top: 0
+  right: 0
+  float: right
+  position: absolute
+  margin-top:0
+  z-index: 9
+  height: 100%
+  width: 100%
+  opacity: 0
+  cursor: pointer
+  
+  &:checked 
+    z-index: 8
+  
+    + .slide 
+      opacity: 0
+    &:nth-child(1):checked
+      z-index: 9
+    
+  &:nth-child(1):checked
+    float: left
+    z-index: 9
+    
+    + .slide
+        opacity: 1
+    
+    ~ .faux-ui-facia
+      float: left
+      z-index: 8
+      + .slide
+        opacity: 0
+      
+      &:checked
+        z-index: 9
+        + .slide
+          opacity: 1
+*/
+
+/*
+.carousel, .carousel_ul{
+    height: 100%;
+}
+.carousel{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.50);
+    
+}
+.carousel li{
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.carousel ul{
+    position: absolute;
+}
+*/
